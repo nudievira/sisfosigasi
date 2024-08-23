@@ -20,6 +20,7 @@ class AuthController extends Controller
 
     public function authenticate(Request $request)
     {
+        // dd($request->all());
         try {
             $request->validate([
                 'username' => 'required',
